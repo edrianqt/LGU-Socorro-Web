@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="hero-media">
+    <img src="{{ url_for('static', filename='uploads/511097534_30611713895093863_7262176335619382503_n.jpg') }}" alt="Socorro festival dancers in colorful traditional costumes" fetchpriority="high">
+  </div>
+  <div class="hero-content">
+    <p class="hero-kicker">Bucas Grande Island &bull; Surigao del Norte</p>
+    <h1>Socorro<span>.</span></h1>
+    <p class="hero-subtitle">An island of possibilities.<br>A community that cares.</p>
+    <div class="hero-actions">
+      <a class="button" href="{{ url_for('services') }}">Citizen services <span>&rarr;</span></a>
+      <a class="hero-link" href="{{ url_for('tourism') }}">Discover our island &nearr;</a>
+    </div>
+  </div>
+  <div class="hero-caption"><span>OUR PEOPLE. OUR PRIDE.</span><span>The spirit of Socorro, in full color.</span></div>
+</section>
+
+<section class="gateway" aria-labelledby="gateway-title">
+  <div class="gateway-heading"><p class="eyebrow">Your municipality, closer</p><h2 id="gateway-title">What brings you here?</h2></div>
+  <div class="gateway-body">
+    <div class="audience-tabs" role="tablist" aria-label="Explore by audience">
+      <button type="button" role="tab" id="tab-resident" aria-selected="true" aria-controls="panel-resident" data-audience="resident">I live here</button>
+      <button type="button" role="tab" id="tab-visitor" aria-selected="false" aria-controls="panel-visitor" tabindex="-1" data-audience="visitor">I'm visiting</button>
+      <button type="button" role="tab" id="tab-business" aria-selected="false" aria-controls="panel-business" tabindex="-1" data-audience="business">I do business</button>
+    </div>
+    <div class="audience-panel" role="tabpanel" id="panel-resident" aria-labelledby="tab-resident"><a href="{{ url_for('services') }}">Request assistance <span>&nearr;</span></a><a href="{{ url_for('news', type='events') }}">Community events <span>&nearr;</span></a><a href="{{ url_for('contact') }}">Talk to the LGU <span>&nearr;</span></a></div>
+    <div class="audience-panel" role="tabpanel" id="panel-visitor" aria-labelledby="tab-visitor" hidden><a href="{{ url_for('tourism') }}">Explore &amp; plan a visit <span>&nearr;</span></a><a href="{{ url_for('services', service='Tourism Assistance') }}#request-form">Tourism assistance <span>&nearr;</span></a><a href="{{ g.site.municipality.hero_video }}" target="_blank" rel="noopener">Watch our story <span>&nearr;</span></a></div>
+    <div class="audience-panel" role="tabpanel" id="panel-business" aria-labelledby="tab-business" hidden><a href="{{ url_for('services', service='Business Registration') }}#request-form">Business registration <span>&nearr;</span></a><a href="{{ url_for('transparency') }}">Public documents <span>&nearr;</span></a><a href="{{ url_for('services', service='Agriculture Support') }}#request-form">Agri-fishery support <span>&nearr;</span></a></div>
+  </div>
+</section>
+
+{% include "_destination_gallery.html" %}
+
+<section class="split-section mayor-section" id="about" aria-labelledby="mayor-title">
+  <div class="mayor-message">
+    <p class="eyebrow">A message from the mayor</p>
+    <h2 id="mayor-title">Mabuhay!</h2>
+    {% for paragraph in g.site.mayor.message %}
+      <p>{% if loop.index == 2 %}We, the <strong>Team Mabungahong Socorro</strong>{{ paragraph.split('Team Mabungahong Socorro')[1] }}{% elif loop.index == 4 %}On this website, you'll find information about our <strong>tourism attractions</strong>, <strong>agricultural and fishery initiatives</strong>, <strong>community programs</strong>, and more. We're committed to transparency, accountability, and citizen engagement, and we invite you to join the conversation.{% else %}{{ paragraph }}{% endif %}</p>
+    {% endfor %}
+    <img class="signature" src="{{ url_for('static', filename='uploads/' ~ g.site.mayor.signature) }}" alt="Mayor signature">
+    <p><strong>{{ g.site.mayor.name }}</strong><br>{{ g.site.mayor.title }}</p>
+    <a href="{{ url_for('about') }}">Meet your local government &rarr;</a>
+  </div>
+  <figure class="mayor-portrait">
+    <img class="portrait" src="{{ url_for('static', filename='uploads/' ~ g.site.mayor.photo) }}" alt="Mayor {{ g.site.mayor.name }}" loading="lazy">
+    <figcaption class="mayor-quote"><blockquote>&ldquo;{{ g.site.mayor.quote }}&rdquo;</blockquote><p>&ldquo;{{ g.site.mayor.quote_translation }}&rdquo;</p></figcaption>
+  </figure>
+</section>
+
+{% include "_vice_mayor.html" %}
+{% include "_departments.html" %}
+
+<section class="band facts">
+  <div class="section-heading">
+    <p class="eyebrow">Interesting Facts</p>
+    <h2>Socorro in Numbers</h2>
+  </div>
+  <div class="fact-grid">
+    {% for fact in g.site.facts %}
+      <article>
+        <strong>{{ fact.value }}</strong>
+        <span>{{ fact.label }}</span>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="content-section home-services">
+  <div class="section-heading">
+    <p class="eyebrow">At your service</p>
+    <h2>A little less waiting.<br>A little more living.</h2>
+    <a href="{{ url_for('services') }}">All services &rarr;</a>
+  </div>
+  <div class="card-grid">
+    {% for service in g.site.services[:4] %}
+      <a class="service-card" href="{{ url_for('services', service=service.name) }}#request-form">
+        <span class="service-number">0{{ loop.index }}</span>
+        <img class="icon" src="{{ url_for('static', filename='uploads/' ~ service.icon) }}" alt="">
+        <h3>{{ service.name }}</h3>
+        <p>{{ service.description }}</p>
+        <span class="service-go">Get assistance &rarr;</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="section-heading row">
+    <div>
+    <p class="eyebrow">From your municipality</p>
+      <h2>The community board</h2>
+    </div>
+    <a href="{{ url_for('news') }}">View News &amp; Events</a>
+  </div>
+  <div class="card-grid editorial-grid">
+    {% for post in posts %}
+      {% include "_post_card.html" %}
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

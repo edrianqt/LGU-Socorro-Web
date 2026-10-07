@@ -1,0 +1,11 @@
+{% set post_kind = post.kind|default(kind|default('news')) %}
+<article class="card media-card" data-content-kind="{{ post_kind }}">
+  <a class="post-image-link{% if post.image_fit == 'contain' %} contain{% endif %}" href="{{ url_for('news_detail', slug=post.slug) if post_kind == 'news' else url_for('event_detail', slug=post.slug) }}" aria-label="Read {{ post.title }}"><img src="{{ url_for('static', filename='uploads/' ~ post.image) }}" alt="{{ post.image_alt|default(post.title) }}" loading="lazy"></a>
+  <div>
+    <time datetime="{{ post.date }}">{{ post.date }}</time>
+    <p class="post-category">{{ 'News' if post_kind == 'news' else 'Event' }}{% if post.category %} &bull; {{ post.category }} &bull; {{ post.status }}{% endif %}</p>
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.excerpt }}</p>
+    <a href="{{ url_for('news_detail', slug=post.slug) if post_kind == 'news' else url_for('event_detail', slug=post.slug) }}">Read the story &rarr;</a>
+  </div>
+</article>

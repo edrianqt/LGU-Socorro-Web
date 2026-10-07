@@ -1,0 +1,1510 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+      
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="/css/styles.css" rel="stylesheet" />
+        
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RaceTech PH</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/racetechlogo.png" />
+    <!-- Bootstrap core CSS -->
+    
+    <link href="https://racetechph.com/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://racetechph.com/assets/css/business-casual.min.css" rel="stylesheet">
+
+    <link href="https://racetechph.com/css/datatable.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <script src="https://racetechph.com/js/jquery.js" type="text/javascript"></script>
+
+   
+    	<link rel="stylesheet" type="text/css" href="https://racetechph.com/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  
+      <meta c harset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <script src="https://racetechph.com/login/vendor/bootstrap/js/popper.js"></script>
+	<script src="https://racetechph.com/login/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+	<script src="https://racetechph.com/login/vendor/select2/select2.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" >
+ 
+ <style>
+      #tableDetail td, th {
+        font-size: 14px !important;
+        text-align: center !important;
+      }
+ 
+.collapsible {
+  background-color: #B0B0B0;
+  color: white;
+  cursor: pointer;
+  padding: 2px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font: 'Garamond';
+}
+
+.collapsbtn {
+  background-color: #b3b3ff;
+  color: white;
+  cursor: pointer;
+  padding: 2px;
+  border: none;
+  outline: none;
+  width: 100%;
+  }
+  
+.collapsbtn:hover {
+  background-color: #B0B0B0;
+}
+
+.collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 2px;
+  background-color: #f1f1f1;
+}
+
+
+.zoom {
+  padding: 20px;
+  background-color: #f5f4f4;
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#subtotal td, #subtotal th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+     
+ .opac-backgound {
+    background: rgba(0, 0, 0, 0.6);
+  
+ }
+
+
+.modal-body{
+    max-height: 80vh;
+    overflow-y: auto;
+}
+     
+body {
+    font-family: Garamond;
+    background-attachment: fixed;
+    background-position:center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+   
+label{
+  display:block;
+  line-height:40px;
+}
+     
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  width: 30px;
+  transition: all 0.15s ease-out 0s;
+  background: white;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: #0FFF50;
+}
+.option-input:checked::before {
+  width: 30px;
+  height: 30px;
+  display:flex;
+  font-size: 25px;
+  font-weight:bold;
+  position: absolute;
+  align-items:center;
+  justify-content:center;
+  font-family:'Font Awesome 5 Free';
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+.input[type="radio"]:checked + label :after { 
+     top: 0;
+    width: 100%;
+    height: 2em;
+    background: white;
+  
+}  
+.sponsorlogomax
+ {
+ max-width: 100px;
+max-height: 100px;  
+     
+ }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+.sticky {
+  position: -webkit-sticky;
+  background-color: green;
+  font-size: 14px;
+  text-align: center;
+border-radius: 25px;
+bottom: 5%;
+box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px 0px;
+margin: 0px 12px;
+display: block;
+
+  margin-left: auto;
+  margin-right: auto;
+height: 40px;
+overflow: visible;
+padding: 0px;
+position: fixed;
+width: auto;
+z-index: 2147483644;
+
+}
+
+
+.blink {
+  animation: blink 2s infinite;
+}
+
+@keyframes  blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+ </style>       
+        
+      <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>RaceTech PH</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/racetechlogo.png" />
+    <!-- Bootstrap core CSS -->
+    
+    <link href="https://racetechph.com/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://racetechph.com/assets/css/business-casual.min.css" rel="stylesheet">
+
+    <link href="https://racetechph.com/css/datatable.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <script src="https://racetechph.com/js/jquery.js" type="text/javascript"></script>
+
+   
+    	<link rel="stylesheet" type="text/css" href="https://racetechph.com/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  
+      <style>
+    
+.navbutton {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+.modal-top{z-index:99991;}
+
+    
+</style>
+
+     
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-2" id="mainNav">
+       <!-- <h4 class="navbar-brand text-uppercase text-expanded font-weight-bold">RaceTech PH</h4>   -->
+        <div class="text-uppercase text-expanded font-weight-bold navbar-brand">
+            <a class="navbar-brand text-uppercase" href="https://racetechph.com/home">RaceTech PH </a>
+        </div>
+    <div class="container">
+       <!-- <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">RaceTech PH</a>-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          
+            <ul id="navMenuId" class="navbar-nav mx-auto">
+                
+                                    
+
+                   
+                    <!-- <li name="activeDataUpload" class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="https://racetechph.com/about">About Us</a>
+                    </li> -->
+                    <li name="activeDataUpload" class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="#">Results</a>
+                             <ul id="navMenuId" class="navbar-nav mx-auto">
+                              <li name="activeDataUpload" class="nav-item">
+                               
+                            <a class="nav-link text-uppercase text-expanded" href="https://racetechph.com/result">View Results</a>
+                            
+                             <a class="nav-link text-uppercase text-expanded" href="https://racetechph.com/uploadresult">Upload result</a>
+                                
+                                </li>
+                                 
+                             </ul>
+                        
+                        
+                    </li>
+                        <li name="activeDataUpload" class="nav-item px-lg-4">
+                            <a class="nav-link text-uppercase text-expanded" href="#">EVENTS</a>
+                             <ul id="navMenuId" class="navbar-nav mx-auto">
+                              <li name="activeDataUpload" class="nav-item">
+                               
+                                <a class="nav-link text-uppercase text-expanded" href="https://racetechph.com/races">Upcoming Event</a>
+                                <a class="nav-link text-uppercase text-expanded" href="https://racetechph.com/eventcalendar">Event Calendar</a>
+                                
+                                </li>
+                                 
+                             </ul>
+                          </li>
+                        <li name="activeDataUpload" class="nav-item px-lg-4">
+                                <a class="nav-link text-uppercase text-expanded" href="https://racetechph.com/athletes">ATHLETES</a>
+                          </li>
+
+                                       
+                    
+                    <li name="activeDataUpload" class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="https://racetechph.com/products">Products</a>
+                    </li>
+                  <!--  <li name="activeDataUpload" class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="https://racetechph.com/contact">Contact Us</a>
+                    </li>
+                    -->
+                    
+                     <li name="activeDataUpload" class="nav-item px-lg-4">
+                                <a class="nav-link text-uppercase text-expanded" href="#">Information</a>
+                                <ul id="navMenuId" class="navbar-nav mx-auto">
+                                <li name="activeDataUpload" class="nav-item">
+                                <a class="nav-link text-uppercase text-expanded" href="https://racetechph.com/about">About</a>
+                                 <a class="nav-link text-uppercase text-expanded" href="https://racetechph.com/info">Help</a>
+                                <a class="nav-link text-uppercase text-expanded" href="https://racetechph.com/blog">Blog</a>
+                                </li>
+                             </ul> 
+                            </li>
+
+
+                    
+                         <li name="activeDataUpload" class="nav-item px-lg-4">
+                           <button class="nav-link text-uppercase text-expanded btn navbutton" id="navLoginBtn">Log-in</button>
+                            <!-- <button id="LoginBtn" name="LoginBtn" class="btn btn-success">LOG-IN</button>-->
+                        </li>
+
+                
+
+            </ul>
+        </div>
+        </div>
+    </nav>
+
+<div id="navloginModal" class="modal modal-top" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-top">
+
+        <!-- Modal content-->
+        <div class="modal-content modal-top">
+            <div class="modal-heade modal-top">
+           
+              <h5 class="modal-title mt-3 ml-3">Log-in</h5>
+              <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            </div>
+          <div class="alert alert-danger alertLoginFailed">
+		          <p align = "center">Login Failed !</br>
+		          Invalid username or password.</p>
+	              </div>
+
+              <div class="modal-body">
+      
+                <label>Username</label>
+                <input id="navusername" type="text" name="navusername" class="form-control mb-3" placeholder="Username">
+                
+                <label>Password</label>
+                <input id="navpassword" type="password" class="form-control mb-3" name="navpassword" placeholder="Password">
+                
+                  <input type="checkbox" class="mr-1 mb-3" id="showpass">Show Password
+                  
+                  <div align="center">
+                   <div class="col-md-6 col-sm-6 col-lg-6 mb-3">
+                  
+                     <button style="width: 100%;" id="navlogin" name="navlogin" class="btn btn-primary">
+							LOG-IN
+						</button>
+					
+                    </div>  
+                     <div class="col-md-6 col-sm-6 col-lg-6 mb-3">
+                    	<button style="width: 100%;" class="btn btn-primary" id="navsignup">
+							CREATE ACCOUNT
+						</button>
+                  </div> 
+    		   	<div class="col-md-6 col-sm-6 col-lg-6 mt-3">
+						 <button style="width: 100%;" id="navforgotpass" name="navforgotpass" class="btn btn-primary">
+							FORGOT PASSWORD?
+						</button>
+					</div>
+					<div class="col-md-6 col-sm-6 col-lg-6 mt-3">
+	          <!--  <div class="fb-login-button" data-width="" data-size="medium" data-button-type="login_with" data-layout="rounded" data-auto-logout-link="true" data-use-continue-as="false"></div>-->
+				
+				</div>	</div>
+            </div>
+        <div class="modal-footer">
+           
+					
+					
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+                  
+         </div>
+        </div>
+ </div>
+ 
+ 
+ 
+ <div id="navsignupModal" class="modal modal-top" role="dialog">
+      <div class="modal-dialog modal-lg modal-dialog-centered modal-top">
+          
+ 
+
+        <!-- Modal content-->
+        <div class="modal-content modal-top">
+            <div class="modal-heade modal-top">
+           
+              <h5 class="modal-title mt-3 ml-3">Sign-up</h5>
+              <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            </div>
+          <div class="alert alert-danger alertLoginFailed">
+		          <p align = "center">Login Failed !</br>
+		          Invalid username or password.</p>
+	              </div>
+
+              <div class="modal-body">
+      
+              <div id="#personalInformation">
+
+            <h3>Personal Information</h3>
+
+            <fieldset style="padding: 10px; border: 2px solid white;">
+
+              <div class="row">
+                <div class="col-md-4">
+                    <label for="">Given Name</label>
+                    <input name="reqinput" id="givenName" type="text" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label for="">Middlename</label>
+                    <input name="reqinput" id="middleName" type="text" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label for="">Surname</label>
+                    <input name="reqinput" id="surName" type="text" class="form-control">
+                </div>
+              </div>
+
+              <div style="margin-top: 20px;" class="row">
+       
+             
+                
+                <div class="col-md-4">
+                    <label for="">Birthdate</label>
+                    <input name="reqinput" id="birthDate" type="date" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label for="">Gender</label>
+                    <select name="reqinput" id="gender" class="form-control">
+                      <option value=""></option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+                </div>
+                
+                 <div class="col-md-4">
+                    <label for="">Team / Affiliation</label>
+                    
+                    <input name="reqinput" id="race_team" type="text" class="form-control">
+                </div>
+              </div>
+
+              <div style="margin-top: 20px;" class="row">
+                <div class="col-md-4">
+                    <label for="">Contact Email</label>
+                    <input name="reqinput" id="contactEmail" type="text" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label for="">Contact Number</label>
+                    <input name="reqinput" id="contactNumber" type="text" class="form-control">
+                </div>
+                <div class="col-md-4">
+                    <label for="">Address</label>
+                    <input name="reqinput" id="address" type="text" class="form-control">
+                </div>
+              </div>
+
+              <div style="margin-top: 20px;" class="row">
+                    <div class="col-md-4">
+                    <label for="">Country</label>
+               
+                     <input name="reqinput" id="country" type="text" class="form-control">
+                </div>  
+                  
+                 <div class="col-md-4">
+                    <label for="">State/Province</label>
+                    <input name="reqinput" id="state" type="text" class="form-control">
+                </div>
+                  
+                <div class="col-md-4">
+                    <label for="">City/Town</label>
+                    <input name="reqinput" id="city" type="text" class="form-control">
+                </div>
+          
+            
+              </div>
+              
+               <div class="row">
+                   <h5>In case of emergency</h5>
+                   <br/>
+                  <div class="col-md-4">
+                      <label for="">Contact Name</label>
+                      <input name="reqinput"  id="emergencyName" type="text" class="form-control">
+                  </div>
+                  <div class="col-md-4">
+                      <label for="">Contact Number</label>
+                      <input name="reqinput"  id="emergencyContact" type="text" class="form-control">
+                  </div>
+                  <div class="col-md-4">
+                    
+                  </div>
+                </div>
+
+              <div style="margin-top: 20px;" class="row">
+       
+        
+                
+          
+              </div>
+          
+            </fieldset>
+
+          </div> 
+            </div>
+        <div class="modal-footer">
+           
+			<button style="max-width: 150px;" id="navsignupsave" name="navsignupsave" class="btn btn-primary">
+							SAVE
+						</button>		
+					
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+                  
+         </div>
+        </div>
+ </div>
+ 
+ <div id="addAccountModal" class="modal fade  modal-top" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-top">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Create Account</h4>
+              <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            </div>
+            <div class="modal-body">
+                <label>Username</label>
+                <input type="hidden" id="racer_id" class="racer_id" placeholder="Username">
+                <input type="text" id="username" class="form-control username" placeholder="Username">
+
+                <br>
+
+                <label>Password</label>
+                <input type="password" id="password1" class="form-control password1" placeholder="Password">
+
+                <br>
+
+                <label>Confirm Password</label>
+                <input type="password" id="con_password1" class="form-control con_password1" placeholder="Confirm Password">
+                <span style='padding: 5px;' id='message'></span>
+                
+            </div>
+            <div class="modal-footer">
+              <button id="addBtnCh" class="btn btn-success">Save Account</button>
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+      </div>
+    </div>
+     <div id="navforgotPassword" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-dialog-centered">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+           
+              <h4 class="modal-title">Forgot Password</h4>
+              <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+            </div>
+
+              <div class="modal-body">
+              <form action="https://racetechph.com/forgot_password" method="post" enctype="multipart/form-data">
+              <input type="hidden" name="_token" value="KdJY78FQlagBhCABcRc7coIn2g9M6ALXfUYD0iP4">
+                <label>Username / Email</label>
+                <input type="text" name="forgotusername" class="form-control" placeholder="Username / Email">
+                <br>
+                <p>A temporary password will be sent to your e-mail</p>
+                <br>
+            </div>
+            <div class="modal-footer">
+              <input type="submit" id="btnpassword" class="btn btn-success"></input>
+               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+         </form>
+        </div>
+        </div>
+      </div>
+
+
+    </div>    
+
+
+<script>
+    $(document).ready(function() {
+        
+     $("#signIn").click(function() {
+            $("#signInModal").modal("show");
+        });
+        
+   $("#navLoginBtn").on("click", function() {
+            $("#navloginModal").modal("show");
+            $(".alertLoginFailed").hide();
+       
+            console.log();
+        });
+        
+       $("#navsignup").on("click", function() {
+           
+           
+           $("#navloginModal").modal("hide");
+            $("#navsignupModal").modal("show");
+            $(".alertLoginFailed").hide();
+       
+    //    getCountry();
+        //   console.log();
+        });      
+        
+        
+
+
+        $("#navlogoutDestroy").click(function() {
+            // alert("logoutDestroy");
+            $.post('/api/destroysession', {
+                '_token': $('input[name=_token]').val()
+            }, function(data) {
+                if (data === "Success") {
+                    location.href = "../";
+                }
+            });
+        });
+
+        
+        
+  $('#username').keyup(function(event) {
+        if (event.keyCode === 13) {
+            $('#navLoginBtn').click();
+        }
+    });
+
+    $('#password').keyup(function(event) {
+        if (event.keyCode === 13) {
+            $('#navLoginBtn').click();
+        }
+    });
+
+    $(document).bind('keypress', function(e) {
+        if(e.keyCode==13){
+             $('#navLoginBtn').trigger('click');
+         }
+    });
+
+    $("#navloginModal #navlogin").click(function() {
+       let username = $("#navusername").val();
+        let password = $("#navpassword").val();
+        login(username, password);
+
+    });
+    
+    $("#navloginModal").on('click',"#navforgotpass", function() {
+        $("#navloginModal").modal("hide");
+        $("#navforgotPassword").modal("show");
+        
+             
+    });
+        
+   $("#showpass").on("click",  function() {
+       if ($("#showpass").is(":not(:checked)")) {
+           
+        $("#navpassword").attr("type", "password");   
+           
+       }else { 
+           
+           $("#navpassword").attr("type", "text"); 
+       }
+  });     
+ 
+    function login(username, password) {
+        $.post('/api/loginuser', {
+            'username': username,
+            'password': password,
+            '_token': $('input[name=_token]').val()
+        }, function(data) {
+             console.log(data.status.code);
+            if( (data.status.code != "0") && (data.status.message == "Success") ) {
+                $(".alertLoginFailed").hide();
+                //console.log("True");
+                localStorage.setItem("IsLogin", data.status.is_login);
+                localStorage.setItem("LoginToken", data.status.login_token);
+                localStorage.setItem("podsdifdfdcnds", data.status.user_id);
+                localStorage.setItem("dsdpsdcvdnvddi", data.status.user_type);
+                localStorage.setItem("fullname", data.status.full_name);
+                location.reload();
+               // console.log(data.status.code);
+            } else {
+                $(".alertLoginFailed").show();
+              //   console.log("False");
+            }
+        });
+    }
+    
+    
+      $("#navsignupModal #navsignupsave").on("click", function() {
+      
+  //  test();
+ 
+        console.log();
+        // $("#addAccountModal").modal("show");
+        var givenName = $("#navsignupModal #givenName").val();
+        var middleName = $("#navsignupModal #middleName").val();
+        var surName = $("#navsignupModal #surName").val();
+        //var nickName = $("#navsignupModal #nickName").val();
+        var birthDate = $("#navsignupModal #birthDate").val();
+        var gender = $("#navsignupModal #gender option:selected").val();
+        var contactEmail = $("#navsignupModal #contactEmail").val();
+        var contactNumber = $("#navsignupModal #contactNumber").val();
+        var address = $("#navsignupModal #address").val();
+        var city = $("#navsignupModal #city").val();
+        var state = $("#navsignupModal #state").val();
+        var country = $("#navsignupModal #country").val();
+        var tshirtSize = 'N/A';
+        // var tshirtAffiliation = $("#tshirtAffiliation").val();
+        var emergencyName = $("#navsignupModal #emergencyName").val();
+        var emergencyContact = $("#navsignupModal #emergencyContact").val();
+        var teamId =  $("#navsignupModal #race_team").val(); 
+        var errCtr = false;
+         
+
+       if ( (givenName.length < 1) || (middleName.length < 1) || (surName.length < 1) || (birthDate.length < 1) || (gender.length < 1) ||
+        (contactEmail.length < 1) || (contactNumber.length < 1) || (address.length < 1)|| (city.length < 1) || (state.length < 1) || (country.length < 1) || (emergencyName.length < 1) || (emergencyContact.length < 1) ) {
+
+            if (givenName.length < 1) {
+                $("#navsignupModal #givenName").css('border-color', 'red');
+               errCtr = true;
+            } else {
+                $("#navsignupModal #givenName").css('border-color', '#ced4da');
+            }
+
+            if (middleName.length < 1) {
+                $("#navsignupModal #middleName").css('border-color', 'red');
+                errCtr = true;
+            } else {
+                $("#navsignupModal #middleName").css('border-color', '#ced4da');
+            }
+
+            if (surName.length < 1) {
+                $("#navsignupModal #surName").css('border-color', 'red');
+                errCtr = true;
+            } else {
+                $("#navsignupModal #surName").css('border-color', '#ced4da');
+            }
+
+            if (birthDate.length < 1) {
+                $("#navsignupModal #birthDate").css('border-color', 'red');
+                errCtr = true;
+            } else {
+                $("#navsignupModal #birthDate").css('border-color', '#ced4da');
+            }
+
+            if (gender.length < 1) {
+                $("#navsignupModal #gender").css('border-color', 'red');
+                errCtr = true;
+            } else {
+                $("#navsignupModal #gender").css('border-color', '#ced4da');
+            }
+
+            if (contactEmail.length < 1) {
+                $("#navsignupModal #contactEmail").css('border-color', 'red');
+                errCtr = true;
+            } else {
+                $("#navsignupModal #contactEmail").css('border-color', '#ced4da');
+            }
+
+            if (contactNumber.length < 1) {
+                $("#navsignupModal #contactNumber").css('border-color', 'red');
+                errCtr = true;
+            } else {
+                $("#navsignupModal #contactNumber").css('border-color', '#ced4da');
+            }
+
+            if (address.length < 1) {
+                $("#navsignupModal #address").css('border-color', 'red');
+                errCtr = true;
+            } else {
+                $("#navsignupModal #address").css('border-color', '#ced4da');
+            }
+            
+              if (city.length < 1) {
+                $("#navsignupModal #city").css('border-color', 'red');
+                errCtr = true;
+            } else {
+                $("#navsignupModal #city").css('border-color', '#ced4da');
+            }
+            
+              if (state.length < 1) {
+                $("#navsignupModal #state").css('border-color', 'red');
+                errCtr = true;
+            } else {
+                $("#navsignupModal #state").css('border-color', '#ced4da');
+            }
+            
+            if (country.length < 1) {
+                $("#navsignupModal #country").css('border-color', 'red');
+                errCtr = true;
+            } else {
+                $("#navsignupModal #country").css('border-color', '#ced4da');
+            }
+
+            if (emergencyName.length < 1) {
+                $("#navsignupModal #emergencyName").css('border-color', 'red');
+                errCtr = true;
+            } else {
+                $("#navsignupModal #emergencyName").css('border-color', '#ced4da');
+            }
+
+            if (emergencyContact.length < 1) {
+                $("#navsignupModal #emergencyContact").css('border-color', 'red');
+                errCtr = true;
+            } else {
+                $("#navsignupModal #emergencyContact").css('border-color', '#ced4da');
+            }
+            
+            if (errCtr)
+            {
+                alert('Please fill out all information.');
+            
+            }
+
+        } else {
+            $("#navsignupModal #givenName").css('border-color', '#ced4da');
+            $("#navsignupModal #middleName").css('border-color', '#ced4da');
+            $("#navsignupModal #surName").css('border-color', '#ced4da');
+            $("#navsignupModal #birthDate").css('border-color', '#ced4da');
+            $("#navsignupModal #gender").css('border-color', '#ced4da');
+            $("#navsignupModal #contactEmail").css('border-color', '#ced4da');
+            $("#navsignupModal #contactNumber").css('border-color', '#ced4da');
+            $("#navsignupModal #address").css('border-color', '#ced4da');
+            $("#navsignupModal #emergencyName").css('border-color', '#ced4da');
+            $("#navsignupModal #emergencyContact").css('border-color', '#ced4da');
+        insertSignUp(givenName, middleName, surName, birthDate, gender, contactEmail, contactNumber, address, city, state, country, tshirtSize, emergencyName, emergencyContact, teamId);
+        }
+        
+        
+           
+    });
+        
+
+
+    function insertSignUp(givenName, middleName, surName, birthDate, gender, contactEmail, contactNumber, address, city, state, country, tshirtSize, emergencyName, emergencyContact, teamId) {
+        $.post('api/personalinformartion/insert', {
+            'givenName':givenName,
+            'middleName':middleName,
+            'surName':surName,
+            'nickName':'1',
+            'birthDate':birthDate,
+            'gender':gender,
+            'contactEmail':contactEmail,
+            'contactNumber':contactNumber,
+            'address':address,
+            'city':city,
+            'state':state,
+            'country':country,
+            'tshirtSize':tshirtSize,
+            // 'tshirtAffiliation':tshirtAffiliation,
+            'emergencyName':emergencyName,
+            'emergencyContact':emergencyContact,
+            'teamId':teamId,
+            '_token': $('input[name=_token]').val()
+        }, function(data) {
+            if(data[0] == "InsertSuccess") {
+                console.log(data);
+                alert("Racer information has been added.");
+                
+                
+                 $("#navsignupModal").modal("hide");
+                $("#addAccountModal").modal("show");
+                $("#addAccountModal .racer_id").val(data[1]);
+                // location.reload();
+            } else {
+                console.log(data);
+                alert("Falied to add the data, please retry.");
+            }
+        });
+    }
+        
+    
+      $('#addAccountModal').on('keyup', '#password1', function () {
+        if ($('#addAccountModal #password1').val() == $('#addAccountModal #con_password1').val()) {
+          $('#addAccountModal #message').html('Password match').css('color', 'green');
+          $('#addAccountModal #addBtnCh').prop('disabled', false);
+        } else {
+          $('#addAccountModal #message').html('Password not match').css('color', 'red');
+          $('#addAccountModal #addBtnCh').prop('disabled', true);
+        }
+    });
+
+    $('#addAccountModal').on('keyup', '#con_password1', function () {
+        if ($('#addAccountModal #password1').val() == $('#addAccountModal #con_password1').val()) {
+          $('#addAccountModal #message').html('Password match').css('color', 'green');
+          $('#addAccountModal #con_password1').css('border-color', 'green');
+         $('#addAccountModal #addBtnCh').prop('disabled', false);
+        } else {
+          $('#addAccountModal #message').html('Password not match').css('color', 'red');
+          $('#addAccountModal #con_password1').css('border-color', 'red');
+          $('#addAccountModal #addBtnCh').prop('disabled', true);
+        }
+    });
+
+    $("#addAccountModal").on("click", "#addBtnCh", function() {
+        var username = $("#addAccountModal #username").val();
+        var password = $("#addAccountModal #password1").val();
+        var conpassword = $("#addAccountModal #con_password1").val();
+        var racer_id = $("#addAccountModal #racer_id").val();
+
+        if ((username.length < 1) && (password == conpassword)) {
+            if (username.length < 1) {
+                $('#addAccountModal #messagetest').html('Username field is empty!').css('color', 'red');
+            } else{
+                $('#addAccountModal #messagetest').html('');
+            }
+
+            if (password == conpassword) {
+                $('#addAccountModal #messagetest').html('Password not match!').css('color', 'red');
+            } else {
+                $('#addAccountModal #messagetest').html('');
+            }
+        } else {
+            $('#addAccountModal #messagetest').html('');
+            // console.log([username, password]);
+            saveAccount(racer_id, username, password);
+        }
+
+    });
+    
+    
+      function saveAccount(racer_id, username, password) {
+        $.post('/api/accounts/insertuser', {
+            'racer_id': racer_id,
+            'username': username,
+            'password': password,
+            '_token': $('input[name=_token]').val()
+        }, function(data) {
+            if( (data.status.code != "0") && (data.status.message == "Success") ) {
+                alert("Account has been added!");
+                //location.href = "userlogin";
+              
+                $(".alertLoginFailed").hide();
+                //console.log("True");
+                localStorage.setItem("IsLogin", data.status.is_login);
+                localStorage.setItem("LoginToken", data.status.login_token);
+                localStorage.setItem("podsdifdfdcnds", data.status.user_id);
+                localStorage.setItem("dsdpsdcvdnvddi", data.status.user_type);
+                localStorage.setItem("fullname", data.status.full_name);
+              
+                
+               // $("#loginusername").text(firstname);
+                location.reload();
+                
+            } else if (data == 'EXISTING'){
+                alert("Username already exist! Please select other username.");
+            } else {
+                alert("Account was not added. Please try again");
+            }
+        }); 
+    }  
+    
+    
+    
+    
+    
+    
+        
+    });
+    
+  
+    
+</script>
+
+
+     
+    </head>
+
+    <body><div  class="hero-image">
+    
+     <div  align="center">
+                <img   width="250px"  height="auto" id="race_logo" src="../assets/img/bucas-grande-international-marathon.jpg" alt=""> 
+                </div>
+                </br>  </br>
+                </br>
+  
+    <input type="hidden" name="" id="race_id" class="race_id" value="bucas-grande-international-marathon">
+</div>
+</br></br>
+
+<div class="hero-text">
+    <span id="racetitle"><h1 style="font-size:50px; font-color:black">1st Bucas Grande International Half Marathon</h1></span>
+    <h5 style="font-size:20px; font-color:black">2026-02-22</h5>
+    <h5 style="font-size:20px; font-color:black">By : LGU Socorro</h5>
+  </div>
+   
+
+        <!-- Services-->
+        <section class="bg-white">
+            <div class="">
+                <div class="text-center">
+          <div>
+         </div>
+             </br>
+             <div style="text-align: center;">
+           </div>
+              <div align="left" class="col-lg-12 col-md-12 col-sm-12 mt-3">
+                  <div class="container" style="text-align: left;">
+                      <p class="mt-3 ml-3 mr-3" id="race_description"><font><p>1ST BUCAS GRANDE INTERNATIONAL HALF MARATHON</p>
+<p>Location: Socorro, Bucas Grande Island in Siargao, Surigao del Norte<br>Date: February 22, 2026</p>
+<p><br>Run, and be enchanted, at the 1st Bucas Grande International Half Marathon in Socorro, Surigao del Norte. With race categories 21 KM, 10 KM, and 5 KM, there is a distance for both seasoned racers and first time island runners.</p>
+<p>More than a race, this is a full Bucas Grande experience. Hydration and aid stations will feature seafood galore, local delicacies, and energy boosting beverages. Along the route you will encounter Socorro-style hospitality and charm. The 2026 21 KM medal is also the first piece of a three-year trilogy, created so runners will return and let Bucas Grande be part of their story each year.</p>
+<p>Come run, explore, and immerse yourself in Bucas Grande. Add the optional Bucas Grande island tour during registration if you want the full eco adventure with local guides. Whether you are chasing a personal best or simply want to enjoy a beautiful course by the sea, the Bucas Grande International Half Marathon will give you a race and an island experience you will never forget.</p></font></p>
+                      </div>
+          </div>
+          
+                  
+              </div>
+              
+              
+              
+            
+
+
+ 
+         
+             <div align="left" class="col-lg-12 col-md-12 col-sm-12 mt-3"> 
+            <div class="cta-inner"> 
+            <div align="center" id="RaceImgGallerry">
+                 
+                <h2></h2>
+                
+               
+                </br>
+                <div align="left" class="col-lg-8 col-md-8 col-sm-8 mt-3"> 
+                <div align="center" id="image_gallery">
+                    
+                            <div id="imagegallerychild"><img width="90%" height="auto" style="padding: 10px;" src="../assets/img/75fc94ceb89ea60d1eb205934e900fc6.jpeg"></div>
+                              <div id="imagegallerychild"><img width="90%" height="auto" style="padding: 10px;" src="../assets/img/776adb4ac6013a682b616d81848a0e2d.jpeg"></div>
+                              <div id="imagegallerychild"><img width="90%" height="auto" style="padding: 10px;" src="../assets/img/f4d0638612a8ebf4567070cb7c17e2c0.jpeg"></div>
+                              <div id="imagegallerychild"><img width="90%" height="auto" style="padding: 10px;" src="../assets/img/729deca87a1224f61b0a13f9220575b9.jpeg"></div>
+                              <div id="imagegallerychild"><img width="90%" height="auto" style="padding: 10px;" src="../assets/img/e0d6008e6b4b0fa1b8cb75b7dee57106.jpg"></div>
+                              <div id="imagegallerychild"><img width="90%" height="auto" style="padding: 10px;" src="../assets/img/4bfc764dc86e4e9b37bef0848323f5b2.jpeg"></div>
+                    
+      
+                </div>
+                </div>
+            </div>
+                </br></br><hr/>
+            <div align="center" id="RaceSponsor">
+                <h2></h2>
+              
+                </br>
+                <div align="center" id="sponsor_gallery">
+                </div>
+            </div>
+            
+       
+
+
+             </div> 
+            </div>
+            </div>
+          
+        
+                    </div>
+            </div>
+        </section>
+        
+         <div id="donationtermsPayment" class="modal" style="background: #fafafa;" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Payment</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+              
+              <h4 style="font-size: 14px; font-weight: bold;">Email: <span id="donoremailadd"></span></h4>
+
+              <hr/>
+              
+
+              <h4 style="font-size: 14px; font-weight: bold;">AMOUNT : Php <span id="amounttobedonated"></span> </h4>
+                
+              <hr/>
+  
+             
+               <hr/>
+               
+
+              <h5 style="font-weight: bold;">Payment Option</h5>
+              </br> 
+              <input type="hidden" name="" id="race_id" class="race_id">
+              <input type="hidden" name="" id="racedetail_id" class="racedetail_id">
+              <input type="hidden" name="" id="payment_id" class="payment_id">
+              <input type="hidden" name="" id="registerforwho1" class="registerforwho1">
+              <input type="hidden" name="" id="new_racer_id" class="new_racer_id">
+             <!-- <input type="hidden" name="" id="racer_id" class="racer_id">-->
+              
+              
+              <div style="padding-bottom: 10px;" class="col-lg-12 col-md-12 col-sm-12">
+                  
+         
+               </br>
+                   <div id="dragonpayoption">
+                       <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                <button style="width: 100%;" class="btn btn-success btn-lg" id="online">Online payment</button>  
+                  </div>
+                  <div class="col-lg-8 col-md-8 col-sm-8">
+                    <i>(Pay with Online Banking or Over the counter, Payment Center, GCash, ML, 7/11 via dragonpay.)</i> </br>
+                      
+                  </div>
+                 </div>   
+                </br>
+              
+               
+                 </div>
+                </div>
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <div class="row">
+                  <div class="col-lg-4 col-md-4 col-sm-4">
+                      
+                    <button style="width: 100%;" type="button" class="btn btn-warning btn-sm" data-bs-dismiss="modal">Cancel</button>  
+
+                    <br>
+                     </div>
+                    </div>
+                  </div>          
+                </div>
+                </div>
+               </div>
+              </div>
+              
+              
+    
+             
+                <div id="donatemodal" class="modal" role="dialog">
+      <div class="modal-dialog modal-dialog-centered modal-md">
+          <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                  <h4 style="font-color:blue;">Thank you for your kind heart. <span style="padding:5px;"id="moddistancename"></span></h4>
+            
+            </div>
+            <div class="modal-body">
+              
+                <fieldset style="padding: 10px; border: 2px solid white;">
+                           
+              <div class="row">
+                <div class="col-md-12">
+                    <label for="">Email address</label>
+                    <input name="donateemail" id="donateemail" type="text" class="form-control" placeholder="Email address">
+                </div>
+                </div>
+                 <div class="row">
+                <div class="col-md-12">
+                    <label for="">Amount in Php</label>
+                    <input name="donateamount" id="donateamount" type="text" class="form-control" placeholder="Amount">
+                </div>
+               
+              </div>
+
+
+                
+            </fieldset>
+               
+                    </div>
+                         <div class="col-md-4">
+                    <div align="center">
+                      <button id="danatewitamountbtn"class="btn btn-success btn-sm mt-2" id="">DONATE</button>
+                      </div> 
+                         </div>
+            
+               <div class="modal-footer">  
+               
+        
+              <button type="button" class="btn btn-default" data-bs-dismiss="modal">Cancel</button>
+                
+                   </div>
+                </div>
+                </div>
+              </div>   
+              
+              
+              
+              
+     
+   
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+      
+         <script>
+  $(document).ready(function() {
+      
+      
+        $('.customer-logos').slick({
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover:false,
+            responsive: [{
+                breakpoint: 768,
+                setting: {
+                    slidesToShow:4
+                }
+            }, {
+                breakpoint: 520,
+                setting: {
+                    slidesToShow: 3
+                }
+            }]
+        });     
+      
+      
+      
+       $("#donatebtn").on("click", function() {
+           
+           $("#donatemodal").modal("show");
+      
+     //  $("#donationtermsPayment").modal("show");
+      
+}
+
+  );  
+  
+  
+  
+  
+      
+       $("#donatemodal #danatewitamountbtn").on("click", function() {
+           
+           
+           let donatedamount = $("#donatemodal #donateamount").val();
+           let donoremail = $("#donatemodal #donateemail").val();
+           
+           if (donoremail.length  < 1){
+               
+               alert("Please enter email add.");
+           } else {
+               
+                if (donatedamount.length  < 1){
+                    
+                    
+                     alert("Please enter Amount to be donated.");
+                     
+                } else {
+                    
+                    
+            $("#donatemodal").modal("hide");
+            $("#donationtermsPayment").modal("show");
+           $("#donationtermsPayment #donoremailadd").text(donoremail);
+           $("#donationtermsPayment #amounttobedonated").text(donatedamount);
+          $("#donationtermsPayment #donoremailadd").text(donoremail);
+           $("#donationtermsPayment #amounttobedonated").text(donatedamount);
+      
+                    
+                    
+                }
+           }
+      
+        }
+
+        );  
+        
+        
+        
+        $("#donationtermsPayment").on("click", "#online", function() {
+      
+       $("#processingModal").modal({backdrop: 'static', keyboard: false},"show"); 
+       
+        let email_id = $("#donationtermsPayment #donoremailadd").text();
+        let race_id = $("#race_id").val();
+        let amounttodonate = $("#donationtermsPayment #amounttobedonated").text();
+      
+                            
+                $("#donationtermsPayment").modal("hide");
+              
+                  location.href = 'https://racetechph.com/api/dragonpay/coreproc/donation/'+email_id+'/'+race_id+'/'+amounttodonate;
+                   
+                
+            });
+         
+         
+    
+      
+
+    
+  });      
+  </script>  
+   <div class="mx-auto">
+  <div style="text-align:center;" align="center"  class="mx-auto">
+    <a href="/raceinfoview/bucas-grande-international-marathon"with="60px" id="helpBtn" style="padding:6px; text-align:center; font-weight:bold;" class="btn btn-sm btn-success sticky roundborder">CLICK HERE TO REGISTER</a> 
+     </div> 
+      </div>  
+    </body>
+     <style>
+
+.footer {
+
+ bottom: 0;
+}
+</style>
+
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=2191400871113399&autoLogAppEvents=1" nonce="g6Szv7pH"></script>
+<footer class="footer text-faded text-center py-5">
+    <div class="container">
+        <div class="col-lg-4 mx-auto">
+            
+            <label>Subscribe to our newsletter</label>
+            <div class="input-group border rounded">
+         <input id="emailsub"type="text" class="form-control" placeholder="E-mail address">
+         <span><button id="subscribe" type="submit" class="btn btn-primary">>></button></span>
+          </div></div>
+          </br>
+        <p style="font-family: Calibri; font-size: 20px; color: white;" class="m-0 small">Copyright &copy; Racetech PH  2026</p>
+        <p style="font-family: Calibri; font-size: 14px; color: white;" class="m-0 small"><a href="/privacypolicy">Privacy policy </a> | <a href="/termsofservice"> Terms of Service</a></p>
+         
+    </div>
+    
+    
+
+    
+    
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+
+<script src="https://racetechph.com/assets/vendor/jquery/jquery.min.js"></script>
+<script src="https://racetechph.com/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://racetechph.com/js/datatable.min.js"></script>
+<script src="https://racetechph.com/js/fullnumbersdatatable.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        var url = window.location;
+        $('#navMenuId a[href="'+ url +'"]').parent().addClass('active');
+        $('#navMenuId a').filter(function() {
+            return this.href == url;
+        }).parent().addClass('active');
+        
+        
+$("#subscribe").on("click", function() {
+          var emailsub = $("#emailsub").val();
+         
+          if (emailsub.length < 1)  {
+           alert('Please enter email address.')
+                $("#addEventModal #event_title").css('border-color', 'red');
+            } else { 
+                $("#addEventModal #event_title").css('border-color', '#ced4da');
+                 subscribenews(emailsub);
+            }
+         
+           
+        }
+    );        
+        
+        
+ function  subscribenews(emailsub) {
+        $.post('/subcribe/insert', {
+            'email_sub':emailsub
+        }, function(data) {
+            if(data == "successfull") {
+                //console.log(data);
+                alert("Subcription activated.");
+                location.reload();
+            } else {
+                //console.log(data);
+                alert("Failed to subscribe, please try again.");
+            }
+        });
+    }      
+        
+    });
+</script>
+
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" rel="stylesheet">
+      
+</html>

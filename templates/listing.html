@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero compact">
+  <h1>{{ title }}</h1>
+  <p>Community stories, municipal announcements, and local activities in one place.</p>
+</section>
+<section class="content-section">
+  <form class="news-filters department-filters" method="get" action="{{ url_for('news') }}">
+    <fieldset class="department-modes"><legend class="visually-hidden">Content type</legend>{% for value, label in [('all','All updates'),('news','News'),('events','Events')] %}<label><input type="radio" name="type" value="{{ value }}" {% if selected_type == value %}checked{% endif %}><span>{{ label }}</span></label>{% endfor %}</fieldset>
+    <label class="department-search" for="updates-query">Search updates<input id="updates-query" name="q" value="{{ query }}" type="search" placeholder="Search news and events"></label><button type="submit">Search</button>
+  </form>
+  <p class="result-count">{{ items|length }} update{{ '' if items|length == 1 else 's' }}</p>
+  <div class="card-grid editorial-grid">
+    {% for post in items %}
+      {% include "_post_card.html" %}
+    {% else %}
+      <p>No matching updates. <a href="{{ url_for('news') }}">View all news and events</a>.</p>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

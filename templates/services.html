@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero compact">
+  <h1>Services</h1>
+  <p>A direct connection to your local government.</p>
+</section>
+<section class="content-section">
+  <div class="directory-toolbar"><div><p class="eyebrow">Citizen directory</p><h2>Find the right assistance</h2></div><label for="service-filter">Search services<input type="search" id="service-filter" placeholder="Health, business, agriculture..."></label></div>
+  <p id="service-count" class="result-count" aria-live="polite">{{ g.site.services|length }} services</p>
+  <div class="card-grid">
+    {% for service in g.site.services %}
+      <article class="card service-directory-item" data-search="{{ (service.name ~ ' ' ~ service.description)|lower }}">
+        <img class="icon" src="{{ url_for('static', filename='uploads/' ~ service.icon) }}" alt="">
+        <h3>{{ service.name }}</h3>
+        <p>{{ service.description }}</p>
+        <a href="{{ url_for('services', service=service.name) }}#request-form" data-select-service="{{ service.name }}">Request assistance &rarr;</a>
+      </article>
+    {% endfor %}
+  </div>
+  <p id="service-empty" hidden>No matching services. Try another term or <a href="{{ url_for('contact') }}">contact the LGU</a>.</p>
+</section>
+<section class="form-section" id="request-form">
+  <p class="eyebrow">Let's get started</p>
+  <h2>Service Request Form</h2>
+  <form method="post" class="stacked-form">
+    <label>Name<input name="name" required></label>
+    <label>Email<input name="email" type="email" required></label>
+    <label>Phone<input name="phone"></label>
+    <label>Service
+      <select name="service" id="request-service" required>
+        <option value="">Select a service</option>
+        {% for service in g.site.services %}
+          <option {% if request.args.get('service') == service.name %}selected{% endif %}>{{ service.name }}</option>
+        {% endfor %}
+      </select>
+    </label>
+    <p id="selected-service-description" class="service-context" aria-live="polite"></p>
+    <label>Details<textarea name="details" rows="5" required></textarea></label>
+    <button type="submit">Submit Request</button>
+  </form>
+</section>
+<script type="application/json" id="service-data">{{ g.site.services|tojson }}</script>
+{% endblock %}

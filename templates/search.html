@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero compact">
+  <h1>Search</h1>
+  <form class="inline-search" method="get">
+    <input name="q" value="{{ query }}" placeholder="Search the site">
+    <button type="submit">Search</button>
+  </form>
+</section>
+<section class="content-section">
+  {% for result in results %}
+    <article class="search-result">
+      <h2><a href="{{ result.url }}">{{ result.title }}</a></h2>
+      <p>{{ result.excerpt }}</p>
+    </article>
+  {% else %}
+    {% if query %}<p>No results found.</p>{% endif %}
+  {% endfor %}
+</section>
+{% endblock %}

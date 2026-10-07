@@ -1,0 +1,14 @@
+<section class="split-section vice-section" id="vice-mayor" aria-labelledby="vice-title">
+  <img class="portrait" src="{{ url_for('static', filename='uploads/' ~ g.site.vice_mayor.photo) }}" alt="Vice Mayor {{ g.site.vice_mayor.name }}" loading="lazy">
+  <div>
+    <p class="eyebrow">A message from the vice mayor</p>
+    <h2 id="vice-title">Welcome to Socorro!</h2>
+    <p>{{ g.site.vice_mayor.message[0] }}</p>
+    <details class="leadership-message" {% if request.endpoint == 'about' %}open{% endif %}>
+      <summary>Read the full message</summary>
+      {% for paragraph in g.site.vice_mayor.message[1:] %}<p>{{ paragraph }}</p>{% endfor %}
+    </details>
+    <img class="signature" src="{{ url_for('static', filename='uploads/' ~ g.site.vice_mayor.signature) }}" alt="Vice mayor signature" loading="lazy">
+    <p class="leader-name"><strong>{{ g.site.vice_mayor.name }}</strong><br>{{ g.site.vice_mayor.title }}<br><span>Presiding Officer, Sangguniang Bayan</span></p>
+  </div>
+</section>

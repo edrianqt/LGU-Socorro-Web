@@ -1,0 +1,12 @@
+<section class="destination-band" aria-labelledby="destination-title">
+  <div class="destination-heading"><div><p class="eyebrow">Discover hidden paradise</p><h2 id="destination-title">Explore Bucas Grande Island</h2></div><a href="{{ url_for('tourism') }}#experiences">Plan your island visit &nearr;</a></div>
+  <div class="destination-gallery">
+    {% for destination in g.site.tourism %}
+    <a class="destination-tile" href="{{ url_for('tourism') }}#{{ destination.slug }}" aria-label="Explore {{ destination.name }}">
+      <img src="{{ url_for('static', filename='uploads/' ~ destination.image) }}" alt="{{ destination.name }}" loading="lazy" width="600" height="760">
+      <span class="destination-label"><span class="destination-category">{{ destination.category }}</span><strong>{{ destination.name }}</strong><span class="destination-action">Explore destination &nearr;</span></span>
+      <span class="destination-index" aria-hidden="true">0{{ loop.index }}</span>
+    </a>
+    {% endfor %}
+  </div>
+</section>

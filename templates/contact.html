@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero compact">
+  <h1>Contact</h1>
+  <p>{{ g.site.municipality.address }} · {{ g.site.municipality.email }} · {{ g.site.municipality.phone }}</p>
+</section>
+<section class="form-section">
+  <h2>Send a Message</h2>
+  <form method="post" class="stacked-form">
+    <label>Name<input name="name" required></label>
+    <label>Email<input name="email" type="email" required></label>
+    <label>Subject<input name="subject"></label>
+    <label>Message<textarea name="message" rows="6" required></textarea></label>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+{% endblock %}

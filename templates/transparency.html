@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="page-hero compact">
+  <h1>Transparency</h1>
+  <p>Browse budget, disclosure, procurement, and citizen service documents.</p>
+  <form class="inline-search" method="get">
+    <select name="category">
+      {% for category in categories %}
+        <option value="{{ category }}" {% if category == selected %}selected{% endif %}>{{ category }}</option>
+      {% endfor %}
+    </select>
+    <button type="submit">Filter</button>
+  </form>
+</section>
+<section class="content-section">
+  <div class="document-list">
+    {% for doc in documents %}
+      <article>
+        <div>
+          <h3>{{ doc.title }}</h3>
+          <p>{{ doc.category }} · {{ doc.year }}</p>
+        </div>
+        <a href="{{ doc.url }}">View</a>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,225 @@
+{
+  "municipality": {
+    "name": "Municipality of Socorro",
+    "province": "Province of Surigao del Norte",
+    "country": "Republic of the Philippines",
+    "tagline": "The island municipality of Bucas Grande",
+    "hero_video": "https://vimeo.com/1117320398",
+    "logo": "Socorro-Bucas-Grande-Island.jpg",
+    "address": "Socorro, Surigao del Norte, Philippines",
+    "email": "info@socorro.gov.ph",
+    "phone": "000-000-0000"
+  },
+  "mayor": {
+    "name": "Riza Rafonselle T. Timcang",
+    "title": "Municipal Mayor",
+    "photo": "Riza-Rafonselle-Timcang.jpg",
+    "signature": "Mayor-Riza-Rafonselle-Signature.png",
+    "message": [
+      "Welcome to our beautiful island municipality of Socorro. It is my honor to invite you to explore our website and discover the wonders of Bucas Grande, our island home.",
+      "We, the Team Mabungahong Socorro, envision our island to be the premier eco-tourism and agri-fishery hub of the Philippines, where natural beauty, sustainable practices, and community-driven initiatives come together to create a thriving and resilient community.",
+      "Our island's stunning landscapes and seascapes, rich biodiversity, vibrant culture, timeless tradition, and warm hospitality make it an ideal destination for eco-tourists and nature lovers. Our agri-fishery sector, meanwhile, provides a bounty of fresh produce and seafood, showcasing the best of our island's resources.",
+      "On this website, you'll find information about our tourism attractions, agricultural and fishery initiatives, community programs, and more. We're committed to transparency, accountability, and citizen engagement, and we invite you to join the conversation.",
+      "Let's work together to build a brighter future for our island community. Maraming salamat (thank you) for visiting, and I look forward to welcoming you to our island soon!"
+    ],
+    "quote": "Lajo pa ta, pero lajo na ta.",
+    "quote_translation": "We're still a long way to go, but we've already gone a long way."
+  },
+  "vice_mayor": {
+    "name": "Dalisay R. Galanida-Canta",
+    "title": "Municipal Vice Mayor",
+    "photo": "Vice-Mayor-Dalisay-Canta.jpg",
+    "signature": "Vice-Mayor-Signature.png",
+    "message": [
+      "It is with great pride and heartfelt dedication that I welcome you to the official website of the Island Municipality of Socorro - a land blessed with natural beauty, rich cultural heritage, and a resilient, hardworking people.",
+      "As Vice-Mayor and Presiding Officer of the Sangguniang Bayan, I fully and wholeheartedly support our collective vision of transforming Socorro into the premier eco-tourism and agri-fishery hub of the Philippines. This is more than just a dream - it is a shared commitment that demands unity, innovation, and strong legislative foundations.",
+      "In partnership with our Municipal Mayor, the Sangguniang Bayan remains steadfast in crafting responsive and progressive policies that promote sustainable tourism, protect our environment, and empower our farmers and fisherfolk. We are working to ensure that our laws reflect the needs of the times while staying true to the values that make Socorro a beacon of hope and opportunity in our region.",
+      "Let this website serve not only as a portal of information, but as a symbol of transparency, cooperation, and shared progress. I invite all Socorronhons - here and abroad - as well as visitors and partners, to join us in this journey toward inclusive growth and ecological sustainability.",
+      "Together, let us build a brighter and greener future for Socorro.",
+      "Mabuhay ang Isla sa Paglaum!"
+    ]
+  },
+  "facts": [
+    {"label": "Population", "value": "25.9k"},
+    {"label": "Total Area in Hectares", "value": "12.6k"},
+    {"label": "Tourist Arrivals", "value": "10k"},
+    {"label": "Class Municipality", "value": "3rd"}
+  ],
+  "services": [
+    {"name": "Tourism Assistance", "icon": "tourism.png", "description": "Visitor guidance, destination information, and tourism coordination."},
+    {"name": "Health Services", "icon": "healthcare.png", "description": "RHU assistance, health programs, and community wellness support."},
+    {"name": "Social Welfare", "icon": "welfare.png", "description": "Community welfare programs and citizen assistance requests."},
+    {"name": "Agriculture Support", "icon": "planting.png", "description": "Agri-fishery services, farmer support, and office coordination."},
+    {"name": "Business Registration", "icon": "registered.png", "description": "Business permit concerns and local enterprise support."},
+    {"name": "Assessment", "icon": "assessment.png", "description": "Assessment-related inquiries and local government documentation."},
+    {"name": "Budget Office", "icon": "budget.png", "description": "Budget transparency, document requests, and fiscal coordination."},
+    {"name": "Environmental Services", "icon": "environmental.png", "description": "Environmental protection, sanitation, and coastal care programs."}
+  ],
+  "tourism": [
+    {"name": "Sohoton Cove", "slug": "sohoton-cove", "image": "sohoton-cove.jpg", "category": "Lagoons & coves", "description": "Turquoise water, forested islands, and sheltered coves. Make Sohoton part of your Bucas Grande wish list."},
+    {"name": "Salog Busay", "slug": "salog-busay", "image": "salog-busay.jpg", "category": "Rivers & cascades", "description": "Rocky cascades and flowing water offer another side of Socorro's natural landscape."},
+    {"name": "Giant Mangroves", "slug": "giant-mangroves", "image": "giant-mangroves.jpg", "category": "Nature & forests", "description": "A boardwalk beneath a green canopy, surrounded by the intricate roots of a mangrove forest."},
+    {"name": "Sunrise Peak", "slug": "sunrise-peak", "image": "sunrise-peak.jpg", "category": "Views & open spaces", "description": "An open hillside with wide sea views. A quiet perspective on the island and its surrounding waters."},
+    {"name": "Magkahuyog Falls", "slug": "magkahuyog-falls", "image": "magkahuyog-falls.jpg", "category": "Waterfalls & greenery", "description": "Water tumbles over rock into a forest-framed pool, adding a waterfall stop to your island wish list."}
+  ],
+  "posts": [
+    {
+      "title": "SOEMCO's 30th assembly: a gathering in Socorro",
+      "slug": "soemco-30th-assembly-2026",
+      "date": "2026-03-28",
+      "date_label": "Announced event date",
+      "category": "Community",
+      "status": "Archived announcement",
+      "location": "Socorro Municipal Gymnasium, Surigao del Norte",
+      "organizer": "Socorro Empowered People's Cooperative (SOEMCO)",
+      "image": "soemco-assembly-archive.jpg",
+      "image_alt": "Archival photograph published with SOEMCO's 28th Annual General Assembly report",
+      "image_caption": "Archival photograph from the 28th assembly; not a photograph of the 2026 event.",
+      "photo_credit": "SOEMCO",
+      "photo_source": "https://www.soemco.org.ph/soemco-28th-annual-general-assembly/",
+      "excerpt": "SOEMCO announced its 30th Annual General Assembly for March 28, 2026, at the municipal gymnasium.",
+      "body": "<p>The cooperative invited members to its 30th Annual General Assembly in Socorro, Surigao del Norte, on Saturday, March 28, 2026.</p><h2>Member participation</h2><p>The notice restricted voting, raffle participation, and giveaways to eligible Members in Good Standing as of February 28, with at least PHP 2,000 in capital build-up and personal attendance. Candidacy submissions closed March 6 at 5 p.m.; raffle-ticket and giveaway claims were scheduled to close at 1 p.m. on assembly day.</p><h2>About this archive</h2><p>This article summarizes the organizer's announcement. It does not confirm attendance figures or the event's outcomes.</p>",
+      "sources": [{"label": "SOEMCO: 30th Annual General Assembly advisory", "url": "https://www.soemco.org.ph/"}]
+    },
+    {
+      "title": "Harog Festival: food, heritage, and community",
+      "slug": "harog-festival-2026",
+      "date": "2026-02-22",
+      "date_label": "Event date",
+      "category": "Culture & heritage",
+      "status": "Past event",
+      "location": "Socorro, Surigao del Norte",
+      "organizer": "Araw ng Socorro celebration; SOEMCO participated",
+      "image": "harog-festival-2026.jpg",
+      "image_alt": "SOEMCO participants at the Harog Benignit Festival in Socorro",
+      "image_caption": "Participants at the Harog Festival, photographed in SOEMCO's event report.",
+      "photo_credit": "SOEMCO",
+      "photo_source": "https://www.soemco.org.ph/soemco-joins-the-68th-araw-ng-socorro-celebration-showcasing-support-at-harog-benignit-festival/",
+      "excerpt": "The February 22 celebration brought residents and community partners together around Socorro's food traditions.",
+      "body": "<p>Socorro celebrated the Harog Benignit Festival as part of Araw ng Socorro on February 22, 2026. SOEMCO's participant report records a gathering of residents, officials, organizations, and visitors.</p><h2>A dish with a community story</h2><p>Benignit combines coconut milk with root crops, bananas, and sago. The report connects sharing this dish with Hinabangay, the local tradition of neighbors helping one another through communal work and difficult times.</p><h2>Celebrating together</h2><p>Cultural presentations and thanksgiving activities accompanied the gathering. SOEMCO joined as a community partner supporting local heritage. The photograph shows its festival participants.</p>",
+      "sources": [{"label": "SOEMCO: Harog Festival participant report, February 25, 2026", "url": "https://www.soemco.org.ph/soemco-joins-the-68th-araw-ng-socorro-celebration-showcasing-support-at-harog-benignit-festival/"}]
+    },
+    {
+      "title": "SOCES and SOEMCO launch a partnership for young savers",
+      "slug": "soces-aflatoun-partnership-2025",
+      "date": "2025-12-16",
+      "date_label": "Event date",
+      "category": "Education & community",
+      "status": "Past event",
+      "location": "Socorro Central Elementary School, Socorro, Surigao del Norte",
+      "organizer": "SOEMCO and Socorro Central Elementary School (SOCES)",
+      "image": "aflatoun-soces-2025.jpg",
+      "image_alt": "School and cooperative representatives signing the Aflatoun partnership agreement",
+      "image_caption": "The Aflatoun partnership signing, as photographed in SOEMCO's report.",
+      "photo_credit": "SOEMCO",
+      "photo_source": "https://www.soemco.org.ph/soemco-and-soces-seal-partnership-through-moa-signing-on-aflatoun-savings-program-coupled-with-heartwarming-gift-giving-activity/",
+      "excerpt": "A December 16 agreement introduced a savings-education partnership, accompanied by Christmas gift-giving for pupils.",
+      "body": "<p>SOEMCO and Socorro Central Elementary School signed a memorandum of agreement on December 16, 2025, for the Aflatoun Savings Program.</p><h2>Learning to save</h2><p>The partnership focuses on saving, budgeting, responsible decisions, and social awareness. School officials, cooperative representatives, and pupils attended the signing.</p><h2>A Christmas gathering</h2><p>A gift-giving activity accompanied the ceremony, bringing a seasonal celebration to the school community. The organizer's account presents the agreement as a continuing commitment to practical financial education and values formation.</p>",
+      "gallery": [
+        {"image": "aflatoun-partnership-2025.jpg", "alt": "A photograph from the Aflatoun partnership ceremony", "caption": "Partnership ceremony. Photo: SOEMCO."},
+        {"image": "aflatoun-gifts-2025.jpg", "alt": "A photograph from the school gift-giving activity", "caption": "Christmas gift-giving activity. Photo: SOEMCO."}
+      ],
+      "sources": [{"label": "SOEMCO: Aflatoun partnership and gift-giving report", "url": "https://www.soemco.org.ph/soemco-and-soces-seal-partnership-through-moa-signing-on-aflatoun-savings-program-coupled-with-heartwarming-gift-giving-activity/"}]
+    }
+  ],
+  "events": [
+    {
+      "title": "1st Bucas Grande International Half Marathon",
+      "slug": "bucas-grande-international-half-marathon-2026",
+      "legacy_slug": "sample-event-1",
+      "date": "2026-02-22",
+      "date_label": "Race date",
+      "category": "Sports & island tourism",
+      "status": "Past event",
+      "location": "Socorro, Bucas Grande Island, Surigao del Norte",
+      "organizer": "LGU Socorro, as listed on RaceTech PH",
+      "image": "bucas-half-marathon-2026.jpg",
+      "image_fit": "contain",
+      "image_alt": "Bucas Grande International Marathon event artwork",
+      "image_caption": "Race-series artwork from the February listing; not a race-day photograph.",
+      "photo_credit": "LGU Socorro / RaceTech PH",
+      "photo_source": "https://racetechph.com/racedetails/bucas-grande-international-marathon",
+      "excerpt": "The February 22 race listing offered 21 km, 10 km, and 5 km categories in Socorro, Bucas Grande.",
+      "body": "<p>The first Bucas Grande International Half Marathon was scheduled for February 22, 2026, with LGU Socorro identified as organizer on RaceTech PH.</p><h2>Three distances, one island experience</h2><p>The listing offered 21 km, 10 km, and 5 km categories. It highlighted island hospitality, local food at aid stations, and an optional guided island tour.</p><h2>Race artwork and entitlements</h2><p>The published graphics show medals, race apparel, and category entitlements. Full-size versions are available below.</p><h2>Event archive</h2><p>This is a past-event listing, not an open registration page. Historical prices shown in the graphics are not current offers.</p>",
+      "gallery": [
+        {"image":"bucas-half-marathon-poster-2026.jpg","alt":"February 22, 2026 half-marathon entitlements poster","caption":"Archived event poster. Artwork: LGU Socorro / RaceTech PH."},
+        {"image":"bucas-half-marathon-details-2026.jpg","alt":"Published 21 km medal and apparel designs","caption":"Archived 21 km graphic. Artwork: LGU Socorro / RaceTech PH."},
+        {"image":"bucas-half-marathon-route-2026.jpg","alt":"Published 10 km medal and apparel designs","caption":"Archived 10 km graphic. Artwork: LGU Socorro / RaceTech PH."}
+      ],
+      "sources": [{"label":"RaceTech PH: LGU Socorro's half-marathon listing","url":"https://racetechph.com/racedetails/bucas-grande-international-marathon"}]
+    },
+    {
+      "title": "Bucas Grande Uphill Challenge: a community-powered race",
+      "slug": "bucas-grande-uphill-challenge-2026",
+      "legacy_slug": "sample-event-2",
+      "date": "2026-06-21",
+      "date_label": "Race date",
+      "category": "Sports & community",
+      "status": "Past event",
+      "location": "Socorro, Bucas Grande Island, Surigao del Norte",
+      "organizer": "LGU Socorro with Department of Tourism-Caraga",
+      "image": "bucas-uphill-challenge-2026.jpg",
+      "image_alt": "Runners gathered at the June 2026 Bucas Grande Uphill Challenge",
+      "image_caption": "Runners before the June 21 uphill challenge, in the published race coverage.",
+      "photo_credit": "Alexander Lopez / PNA, republished by Metropolitan",
+      "photo_source": "https://metropolitan.ph/bayanihan-powers-bucas-grande-marathon-in-siargao/",
+      "excerpt": "The June 21 second leg brought runners and community volunteers together across Socorro's island terrain.",
+      "body": "<p>The Bucas Grande International Marathon-Uphill Challenge, Leg 2, took place on June 21, 2026. Philippine News Agency reported 1,240 runners competing over 5, 10, 15, and 25 kilometers.</p><h2>Hinabangay along the course</h2><p>Village officials, residents, and people's organizations supplied aid stations with water, fruit, eggs, and local food. The report connects this effort with Socorro's tradition of helping neighbors through collective work.</p><h2>Sports tourism on Bucas Grande</h2><p>The local government organized the race with DOT-Caraga, combining challenging island terrain with community hospitality.</p><h2>Published results</h2><p>A separate Webscorer results listing is linked below and is marked preliminary by its publisher.</p>",
+      "sources": [
+        {"label":"Philippine News Agency: June 21 race report","url":"https://www.pna.gov.ph/index.php/articles/1277733"},
+        {"label":"Metropolitan: syndicated PNA report and photograph","url":"https://metropolitan.ph/bayanihan-powers-bucas-grande-marathon-in-siargao/"},
+        {"label":"Webscorer: preliminary Leg 2 results","url":"https://www.webscorer.com/racealldetails?raceid=437320"}
+      ]
+    },
+    {
+      "title": "Tourism stakeholders develop new island experiences",
+      "slug": "socorro-tour-package-seminar-2025",
+      "legacy_slug": "sample-event-3",
+      "date": "2025-07-14",
+      "end_date": "2025-07-16",
+      "date_label": "Event dates",
+      "category": "Tourism & training",
+      "status": "Past event",
+      "location": "Women's Center, Socorro, Surigao del Norte",
+      "organizer": "Municipality of Socorro, supported by DOT-Caraga",
+      "image": "tourism-seminar-2025.jpg",
+      "image_alt": "Tourism seminar participants pictured together in Socorro",
+      "image_caption": "Participant photograph from the municipality's seminar account, republished by Siargao Islands.",
+      "photo_credit": "Municipality of Socorro / Siargao Islands",
+      "photo_source": "https://www.siargaoislands.com/successful-3-day-tour-package-development-delivery-seminar/",
+      "excerpt": "Tour operators, accommodation providers, and tourism stakeholders joined a July 14-16 seminar at the Women's Center.",
+      "body": "<p>A three-day Tour Package Development and Delivery Seminar took place at Socorro's Women's Center from July 14 to 16, 2025.</p><h2>From ideas to tour packages</h2><p>Participants worked through learning sessions, practical writing workshops, simulated tours, package presentations, and feedback. The account identifies tour operators, accommodation establishments, and tourism stakeholders among the participants.</p><h2>Local tourism collaboration</h2><p>Dr. Freddie Quinito guided the training. The municipality's account, republished by Siargao Islands, credits DOT-Caraga and local officials for supporting the activity.</p><h2>Event archive</h2><p>This entry records a completed training activity. Contact the tourism office about future training opportunities.</p>",
+      "sources": [{"label":"Siargao Islands: Municipality of Socorro's seminar account","url":"https://www.siargaoislands.com/successful-3-day-tour-package-development-delivery-seminar/"}]
+    }
+  ],
+  "transparency": [
+    {"title": "Annual Budget 2026", "category": "Budget", "year": "2026", "url": "#"},
+    {"title": "Procurement Monitoring Report", "category": "Procurement", "year": "2026", "url": "#"},
+    {"title": "Citizen's Charter", "category": "Citizen Services", "year": "2026", "url": "#"},
+    {"title": "Full Disclosure Policy Board", "category": "Disclosure", "year": "2026", "url": "#"}
+  ],
+  "quick_links": [
+    {"label": "Office of the President", "url": "https://www.officialgazette.gov.ph/"},
+    {"label": "DILG", "url": "https://dilg.gov.ph/"},
+    {"label": "Supreme Court", "url": "https://sc.judiciary.gov.ph/"},
+    {"label": "Court of Appeals", "url": "https://ca.judiciary.gov.ph/"},
+    {"label": "Sandiganbayan", "url": "https://sb.judiciary.gov.ph/"}
+  ],
+  "emergency": [
+    {"label": "PNP", "phone": "000-000-0000"},
+    {"label": "BFP", "phone": "000-000-0000"},
+    {"label": "PCG", "phone": "000-000-0000"},
+    {"label": "RHU", "phone": "000-000-0000"},
+    {"label": "Hospital", "phone": "000-000-0000"}
+  ],
+  "agriculture_office": {
+    "name": "Agriculture Office",
+    "description": "A functional organization chart based on the public Agriculture Office page.",
+    "staff": [
+      {"name": "GERSON C. PELIAS", "role": "Agriculturist II, OIC-Municipal Agriculturist", "reports_to": null},
+      {"name": "CRISMOR V. ANCOG", "role": "Staff", "reports_to": "GERSON C. PELIAS"},
+      {"name": "DENNIS P. PAJA", "role": "Staff", "reports_to": "CRISMOR V. ANCOG"},
+      {"name": "JOVYLE A. CULATA", "role": "Staff", "reports_to": "DENNIS P. PAJA"}
+    ]
+  }
+}

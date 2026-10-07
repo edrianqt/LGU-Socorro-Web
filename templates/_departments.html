@@ -1,0 +1,20 @@
+{% set active_branch = department_branch|default('all') %}
+{% set query = department_query|default('') %}
+<section class="content-section departments-section" id="departments" aria-labelledby="departments-title">
+  <div class="section-heading row"><div><p class="eyebrow">Your local government</p><h2 id="departments-title">Executive &amp; legislative departments</h2></div><a href="{{ url_for('department_track') }}">Track an inquiry &nearr;</a></div>
+  <form action="{{ url_for('departments') }}#departments" method="get" class="department-filters">
+    <fieldset class="department-modes"><legend class="visually-hidden">Department branch</legend>{% for value, label in [('all','All offices'),('executive','Executive'),('legislative','Legislative')] %}<label><input type="radio" name="branch" value="{{ value }}" {% if active_branch == value %}checked{% endif %}><span>{{ label }}</span></label>{% endfor %}</fieldset>
+    <label class="department-search" for="department-search">Find an office<input type="search" name="q" id="department-search" value="{{ query }}" placeholder="Office, service, or concern..."></label><button type="submit">Search</button>
+  </form>
+  <p id="department-count" class="result-count" aria-live="polite"></p>
+  <div class="department-list">
+    {% for office in g.site.departments %}
+    {% set searchable = (office.name ~ ' ' ~ office.description ~ ' ' ~ office.topics|join(' '))|lower %}
+    <details class="department-row" data-branch="{{ office.branch }}" data-search="{{ searchable }}" {% if (active_branch != 'all' and active_branch != office.branch) or (query|lower not in searchable) %}hidden{% endif %}>
+      <summary><img src="{{ url_for('static', filename='uploads/' ~ office.icon) }}" alt="" width="36" height="36" loading="lazy"><span class="department-name">{{ office.name }}<small>{{ office.branch|title }}</small></span><span class="department-expand" aria-hidden="true">+</span></summary>
+      <div class="department-preview"><p>{{ office.description }}</p><div class="department-links"><a href="{{ url_for('department_detail', slug=office.slug) }}">View office &rarr;</a><a href="{{ url_for('department_detail', slug=office.slug) }}#office-inquiry">Send an inquiry &nearr;</a></div></div>
+    </details>
+    {% endfor %}
+  </div>
+  <p id="department-empty" hidden>No offices match your search. Try another term or <a href="{{ url_for('contact') }}">contact the municipality</a>.</p>
+</section>

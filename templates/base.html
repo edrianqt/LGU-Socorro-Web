@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }} | LGU Socorro</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/site.css') }}">
+  <script src="{{ url_for('static', filename='js/site.js') }}" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="civic-bar"><span>Republic of the Philippines <span class="civic-divider">/</span> Surigao del Norte</span><span>Bucas Grande, our island home</span></div>
+  <header class="site-header">
+    <div class="brand">
+      <a href="{{ url_for('home') }}" aria-label="LGU Socorro home">
+        <img src="{{ url_for('static', filename='uploads/' ~ g.site.municipality.logo) }}" alt="Socorro Bucas Grande Island seal">
+      </a>
+      <div>
+        <span>{{ g.site.municipality.country }}</span>
+        <strong>{{ g.site.municipality.name }}</strong>
+        <span>{{ g.site.municipality.province }}</span>
+      </div>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Toggle navigation" title="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">&#9776;</button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
+      <a href="{{ url_for('home') }}">Home</a>
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('departments') }}">Departments</a>
+      <a href="{{ url_for('news') }}">News &amp; Events</a>
+      <a href="{{ url_for('transparency') }}">Transparency</a>
+      <a href="{{ url_for('tourism') }}">Tourism</a>
+      <a href="{{ url_for('services') }}">Services</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </nav>
+    <button class="search-trigger" type="button" data-open-search>Search</button>
+  </header>
+
+  <main id="main">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <div class="flash-wrap">
+          {% for category, message in messages %}
+            <p class="flash {{ category }}">{{ message }}</p>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h3>Republic of the Philippines</h3>
+      <p>{{ g.site.municipality.name }}<br>{{ g.site.municipality.province }}</p>
+      <form class="search-form" action="{{ url_for('search') }}" method="get">
+        <label for="footer-search">Search this site</label>
+        <div>
+          <input id="footer-search" name="q" placeholder="Search news, events, documents">
+          <button type="submit">Search</button>
+        </div>
+      </form>
+    </div>
+    <div>
+      <h3>Government Links</h3>
+      <ul>
+        {% for link in g.site.quick_links %}
+          <li><a href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h3>In Case of Emergency</h3>
+      <ul>
+        {% for item in g.site.emergency %}
+          <li><a href="tel:{{ item.phone }}">{{ item.label }}: {{ item.phone }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <p class="copyright">Copyright &copy; 2026 LGU Socorro. All Rights Reserved. <a href="{{ url_for('submissions') }}">Staff sign in</a></p>
+  </footer>
+  <dialog id="site-search" aria-labelledby="search-title">
+    <div class="dialog-heading"><h2 id="search-title">Find it in Socorro</h2><button type="button" data-close-search aria-label="Close search" title="Close search">&times;</button></div>
+    <form action="{{ url_for('search') }}" method="get" class="dialog-search"><label for="global-query">Search services, news, events, and documents</label><div><input id="global-query" name="q" required placeholder="What are you looking for?"><button type="submit">Search</button></div></form>
+    <div class="search-shortcuts"><a href="{{ url_for('services') }}">Citizen services &rarr;</a><a href="{{ url_for('tourism') }}">Plan a visit &rarr;</a><a href="{{ url_for('transparency') }}">Public documents &rarr;</a></div>
+  </dialog>
+  <button class="back-top" type="button" aria-label="Back to top" title="Back to top" hidden>&uarr;</button>
+</body>
+</html>

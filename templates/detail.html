@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<article class="article">
+  <a class="article-back" href="{{ url_for('news') }}">&larr; Back to News &amp; Events</a>
+  {% if item.category %}<p class="eyebrow">{{ item.category }}</p>{% endif %}
+  <p class="article-date">{{ item.date_label|default('Date') }}: <time datetime="{{ item.date }}">{{ item.date }}</time>{% if item.end_date %} &ndash; <time datetime="{{ item.end_date }}">{{ item.end_date }}</time>{% endif %}{% if item.status %} &bull; {{ item.status }}{% endif %}</p>
+  <h1>{{ item.title }}</h1>
+  <p class="article-intro">{{ item.excerpt }}</p>
+  <figure class="article-cover"><img src="{{ url_for('static', filename='uploads/' ~ item.image) }}" alt="{{ item.image_alt|default(item.title) }}">{% if item.image_caption %}<figcaption>{{ item.image_caption }} {% if item.photo_source %}<a href="{{ item.photo_source }}" target="_blank" rel="noopener">Photo: {{ item.photo_credit }}</a>{% endif %}</figcaption>{% endif %}</figure>
+  {% if item.location %}<dl class="event-facts"><div><dt>Location</dt><dd>{{ item.location }}</dd></div><div><dt>Organizer / participants</dt><dd>{{ item.organizer }}</dd></div></dl>{% endif %}
+  <div class="article-body">{{ item.body|safe }}</div>
+  {% if item.gallery %}<section class="article-gallery" aria-label="Event photographs">{% for photo in item.gallery %}<figure><a href="{{ url_for('static', filename='uploads/' ~ photo.image) }}" target="_blank" rel="noopener" aria-label="View full-size photograph: {{ photo.alt }}"><img src="{{ url_for('static', filename='uploads/' ~ photo.image) }}" alt="{{ photo.alt }}" loading="lazy"></a><figcaption>{{ photo.caption }}</figcaption></figure>{% endfor %}</section>{% endif %}
+  {% if item.sources %}<aside class="article-sources"><h2>Sources &amp; photo credits</h2><ul>{% for source in item.sources %}<li><a href="{{ source.url }}" target="_blank" rel="noopener">{{ source.label }} &nearr;</a></li>{% endfor %}</ul></aside>{% endif %}
+  <a href="{{ url_for('news') }}">Back to News &amp; Events</a>
+</article>
+{% endblock %}

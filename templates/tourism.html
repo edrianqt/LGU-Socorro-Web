@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero tourism-hero">
+  <div class="hero-media"><img src="{{ url_for('static', filename='uploads/sohoton-cove.jpg') }}" alt="Turquoise waters and forested islands of Sohoton Cove" fetchpriority="high"></div>
+  <div class="hero-content"><p class="hero-kicker">Bucas Grande &bull; Philippines</p><h1>Discover<br>Socorro<span>.</span></h1><p class="hero-subtitle">Come for the island.<br>Stay for the stories.</p><a class="button" href="#experiences">Explore experiences &darr;</a></div>
+</section>
+{% include "_destination_gallery.html" %}
+<section class="content-section" id="experiences">
+  <div class="section-heading row"><div><p class="eyebrow">Your island escape</p><h2>What would you love to explore?</h2></div><a href="{{ url_for('services', service='Tourism Assistance') }}#request-form">Ask the tourism office &nearr;</a></div>
+  <div class="explore-layout"><div class="experience-list">
+    {% for item in g.site.tourism %}
+      <article class="experience" id="{{ item.slug }}">
+        <div class="experience-media"><img src="{{ url_for('static', filename='uploads/' ~ item.image) }}" alt="{{ item.name }}" loading="lazy"></div>
+        <div>
+          <p class="eyebrow">Experience 0{{ loop.index }}</p>
+          <h3>{{ item.name }}</h3>
+          <p>{{ item.description }}</p>
+          <button type="button" class="plan-toggle" data-experience="{{ loop.index0 }}" aria-pressed="false">Add to my visit <span>+</span></button>
+        </div>
+      </article>
+    {% endfor %}
+  </div><aside class="visit-planner" aria-labelledby="planner-title"><p class="eyebrow">A trip to look forward to</p><h2 id="planner-title">My island visit</h2><p class="planner-count" aria-live="polite">0 experiences selected</p><ul id="visit-list"></ul><p id="visit-empty">Your next island story starts here.</p><label for="visit-date">Visit date<input type="date" id="visit-date"></label><div class="planner-actions"><button type="button" id="download-plan" disabled>Download plan &darr;</button><button type="button" class="quiet-button" id="clear-plan" disabled>Clear</button></div><a class="planner-contact" href="{{ url_for('services', service='Tourism Assistance') }}#request-form">Coordinate with the tourism office &rarr;</a><p class="planner-note">This is a personal wish list, not a booking. Confirm availability with the tourism office.</p></aside></div>
+</section>
+<script type="application/json" id="tourism-data">{{ g.site.tourism|tojson }}</script>
+{% endblock %}
